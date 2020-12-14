@@ -10,10 +10,10 @@ $ xargs -L 1 -I {} mongoexport -d mydatabase -c {} --out {}.json
 
 ## Create dump of a database
 ```bash
-$ mongodump -h localhost:27017 -d welever-new
+$ mongodump -h localhost:27017 -d mydatabase
 ```
 
 ## Import the dump
 ```bash
-$ mongorestore -h localhost:27017 -d welever-new welever-new/
+$ mongorestore -h localhost:27017 -d mydatabase path/to/dump/mydatabase/
 ```
